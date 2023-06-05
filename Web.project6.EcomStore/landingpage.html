@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+  <title>e-com Hair Supply</title>
+  <link href="http://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet" >
+  
+  <style>
+    body {
+        font-family:Arial, Helvetica, sans-serif,
+        font-size: 100%; 
+        line-height: 350%;
+        text-align: center;
+        background-color:beige;
+        margin: 20px;;
+        padding: 20px;
+       }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1{
+   font: bold 150% "Marko One", Georgia, serif;
+   text-shadow: 2px 2px 5px  lightslategray;
+}
+
+/* Form styles */
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: left;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome To Thee Hair Corner</h1>
+    <div class="image-container">
+        <img src="Thee Hair Corner-logos/Thee Hair Corner-logos_black.png" alt="Store Logo" width="460" height="345">
+        </div>
+    <p>Discover the best African hair braiding extensions at our online store. We offer a wide range of high-quality products that will help you achieve the perfect look. Shop now and experience the beauty of African hair braiding extensions like never before. Welcome to our platform! We are dedicated to empowering individuals with the beauty and versatility of African-inspired hairstyles. Our mission is to provide you with the tools and resources you need to achieve your desired look. Join us on this journey and discover the endless possibilities of African-inspired hairstyles. </p>
+  </header>
+
+  <section>
+    <h2>Sign Up for Exclusive Offers</h2>
+    <form action="processform.html" method="POST">
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div>
+        <label for="state">State:</label>
+        <select id="state" name="state">
+          <option value="" selected disabled>Select your state</option>
+          
+          <option value="Alabama">Alabama</option>
+          <option value="Alaska">Alaska</option>
+          <option value="Arizona">Arizona</option>
+          <option value="Arkansas">Arkansas</option>
+          <option value="California">California</option>
+          <option value="Colorado">Colorado</option>
+          <option value="Connecticut">Connecticut</option>
+          <option value="Delawate">Delaware</option>
+          <option value="Florida">Florida</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Hawaii">Hawaii</option>
+          <option value="Idaho">Idaho</option>
+          <option value="Indiana">Indiana</option>
+          <option value="Iowa">Iowa</option>
+          <option value="Kansas">Kansas</option>
+          <option value="Kentucky">Kentucky</option>
+          <option value="Maine">Maine</option>
+          <option value="Maryland">Maryland</option>
+          <option value="Massachusetts">Massachusetts</option>
+          <option value="Michigan">Michigan</option>
+          <option value="Minnesota">Minnesota</option>
+          <option value="Mississippi">Mississippi</option>
+          <option value="Missouri">Missouri</option>
+          <option value="Montana">Montana</option>
+          <option value="Nebraska">Nebraska</option>
+          <option value="Nevada">Nevada</option>
+          <option value="New Hampshire">New Hampshire</option>
+          <option value="New Jersey">New Jersey</option>
+          <option value="New Mexico">New Mexico</option>
+          <option value="New York">New York</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="North Dakota">North Dakota</option>
+          <option value="Ohio">Ohio</option>
+          <option value="Oklahoma">Oklahoma</option>
+          <option value="Oregon">Oregon</option>
+          <option value="Rhode Island">Rhode Island</option>
+          <option value="South Carolina">South Carolina</option>
+          <option value="South Dakota">South Dakota</option>
+          <option value="Tennessee">Tennessee</option>
+          <option value="Texas">Texas</option>
+          <option value="Utah">Utah</option>
+          <option value="Vermont">Vermont</option>
+          <option value="Virginia">Virginia</option>
+          <option value="Washington">Washington</option>
+          <option value="West Virginia">West Virginia</option>
+          <option value="Wisconsin">Wisconsin</option>
+          <option value="Wyoming">Wyoming</option>
+
+        </select>
+      </div>
+
+      <div>
+        <label for="occupation">Occupation:</label>
+        <select id="occupation" name="occupation">
+          <option value="" selected disabled>Select your occupation</option>
+          
+          <option value="Hair Stylist">Hair Stylist</option>
+          <option value="Salon Owner">Salon Owner</option>
+          <option value="Braider">Braider</option>
+          <option value="Hairdresser">Hairdresser</option>
+          <option value="Salon Assistant">Salon Assistant</option>
+          
+        </select>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="interestList" value="yes">
+          Yes! sign me up for all the latest deals and hair trends.
+        </label>
+      </div>
+
+      <div>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+      </div>
+
+      <form action="processform.html" method="post">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <h2>Resources</h2>
+    <ul>
+        <li><a href="https://express.adobe.com/sp/design/post/urn:aaid:sc:US:57bf812f-79d8-473c-bc4a-1b5b2d130592/?workflow=logomaker&autoDownload=true">Logo</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
